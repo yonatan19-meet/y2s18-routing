@@ -63,3 +63,6 @@ def query_by_id(student_id):
     student = session.query(Student).filter_by(
         student_id=student_id).first()
     return student
+
+add_student(name = "yonatan",year = "y2",finished_lab = False)
+add_student(name = "adrianaa",year = "y2",finished_lab = False)

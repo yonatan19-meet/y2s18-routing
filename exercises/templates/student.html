@@ -7,5 +7,12 @@
 <body>
     <h1>This is the page for the student with id {{ student_id }}.</h1>
     <a href="{{ url_for('home') }}">Home Sweet Home</a>
+    <p>the name is {{student.name}}, {{student.year}}</p>
+    <p> {%if student.finished_lab == True:%}
+    	<p>the student have finished the lab</p>
+    	{%else:%}
+    	<p>the student have not finished the lab</p>
+    	{%endif%}
+    </p>
 </body>
 </html>
